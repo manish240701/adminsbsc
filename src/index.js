@@ -9,13 +9,13 @@ import { EditContextProvider } from "./Context/EditContext";
 //code
 
 //authentication
-const domain = process.env.REACT_APP_AUTH0_DOMAIN;
+// const domain = process.env.REACT_APP_AUTH0_DOMAIN;
 const clientId = process.env.REACT_APP_AUTH0_CLIENT_ID;
 
 ReactDOM.render(
   <EditContextProvider>
     <Auth0Provider
-      domain={domain}
+      domain={"https://adminsbsc.herokuapp.com"}
       clientId={clientId}
       redirectUri={"https://adminsbsc.herokuapp.com"}
     >
